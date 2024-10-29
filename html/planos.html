@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Caravan - Planos</title>
+
+</head>
+<body>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Entre na sua Conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="senhaLogin" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senhaLogin">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Entrar na Conta</button>
+            <br>
+            <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique Aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow-sm p-3 bg-body-tertiary rounded">
+    
+
+        <a href="../index.html" class="navbar-brand ms-3">
+        <img src="../img/caravan.svg" alt="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/html/california.html">California</a></li>
+                  <li><a class="dropdown-item" href="/html/paris.html">Paris</a></li>
+                  <li><a class="dropdown-item" href="/html/dublin.html">Dublin</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="/html/planos.html">Planos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/login.html" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-primary ms-md-3" href="/html/inscricao.html">Inscreva-se</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="container py-5 text-center">
+
+  <div>
+    <span class="h6 text-uppercase d-block mt-3">Seu plano, sua viagem</span>
+    <h1 class="display-4 text-primary mb-5">Escolha o Plano</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md mb-5">
+      <div class="rounded p-4 border">
+        <h2>Gold</h2>
+        <ul class="lista-planos list-unstyled">
+          <li>30 dias de viagem</li>
+          <li>3 destinos diferentes</li>
+          <li>Tudo pago pela empresa</li>
+          <li>Ingresso para festas</li>
+        </ul>
+
+        <form>
+          <div class="mt-4">
+            <select id="inputCidades" class="form-select bg-light">
+              <option>Escolha a Cidade</option>
+              <option>California</option>
+              <option>Paris</option>
+              <option>Dublin</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <a href="/html/inscricao.html" class="btn btn-secondary btn-lg btn-block">Comprar Plano</a>
+          </div>
+          <div class="col">
+            <span class="h4">R$5.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md mb-5">
+      <div class="bg-light rounded p-4 shadow-sm border">
+        <h2>Platinum</h2>
+        <ul class="lista-planos list-unstyled">
+          <li>50 dias de viagem</li>
+          <li>6 destinos diferentes</li>
+          <li>Viagem na Classe Executiva</li>
+          <li>Tudo pago pela empresa</li>
+          <li>Ingresso para festas</li>
+        </ul>
+
+        <form>
+          <div class="mt-4">
+            <select id="inputCidades" class="form-select bg-light">
+              <option>Escolha a Cidade</option>
+              <option>California</option>
+              <option>Paris</option>
+              <option>Dublin</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <a href="/html/inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+          </div>
+          <div class="col">
+            <span class="h4">R$8.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-white mt-5 text-center">
+  <div class="container py-4">
+    <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul id="links" class="list-unstyled">
+            <li><a href="./html/planos.html">Planos</a></li>
+            <li><a href="./html/contato.html">Contato</a></li>
+            <li><a href="./html/inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Locais</h4>
+          <ul id="links" class="list-unstyled">
+            <li><a href="/html/california.html">California</a></li>
+            <li><a href="/html/paris.html">Paris</a></li>
+            <li><a href="/html/dublin.html">Dublin</a></li>
+          </ul>
+        </div>
+
+      <div class="col-md-4 col-6">
+        <h4 class="h6">DADOS DE CONTATO</h4>
+        <ul class="list-unstyled text-secondary">
+          <li>caravan@caravan.com.br</li>
+          <li>15 99999-9999</li>
+          <li>De segunda - sexta 08:00-18:00</li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-6">
+        <h4 class="h6">REDES SOCIAIS</h4>
+        <ul class="list-unstyled">
+          <li><a class="btn btn-outline-secondary mb-3" href="#">Facebook</a></li>
+          <li><a class="btn btn-outline-secondary mb-3" href="#">Instagram</a></li>
+          <li><a class="btn btn-outline-secondary" href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Caravan - Contato</title>
+
+</head>
+<body>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Entre na sua Conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="senhaLogin" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senhaLogin">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Entrar na Conta</button>
+            <br>
+            <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique Aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow-sm p-3 bg-body-tertiary rounded">
+    
+
+        <a href="../index.html" class="navbar-brand ms-3">
+        <img src="../img/caravan.svg" alt="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/html/california.html">California</a></li>
+                  <li><a class="dropdown-item" href="/html/paris.html">Paris</a></li>
+                  <li><a class="dropdown-item" href="/html/dublin.html">Dublin</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/html/planos.html">Planos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/html/contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/html/login.html" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-primary ms-md-3" href="/html/inscricao.html">Inscreva-se</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="container">
+
+  <div class="text-center my-5">
+    <span class="h6 text-uppercase d-block mt-3">Possui alguma dúvida?</span>
+    <h2 class="display-4 text-primary mb-5">Fale Conosco</h2>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-lg mb-4">
+      <form class="bg-light rounded p-4 shadow-sm border">
+        <div class="mb-3">
+          <label for="nomeCliente" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nomeCliente">
+        </div>
+        <div class="mb-3">
+          <label for="emailCliente" class="form-label">Email</label>
+          <input type="text" class="form-control" id="emailCliente">
+        </div>
+        <div class="form-group">
+          <label for="mensagemCliente">Mensagem</label>
+            <textarea id="mensagemCliente" class="form-control mb-3" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </div>
+
+    <div class="col-lg">
+      <h2 class="text-uppercase h6">Nosso Endereço</h2>
+      <img class="img-fluid rounded shadow-sm mb-4" src="../img/mapa.png" alt="Foto Mapa">
+      <h2 class="text-uppercase h6">Dados de Contato</h2>
+
+        <div class="row">
+          <div>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@caravan.com.br</li>
+              <li>15 99999-9999</li>
+              <li>De segunda - sexta 08:00-18:00</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="h6">REDES SOCIAIS</h2>
+            <ul class="list-unstyled d-flex flex-row gap-2">
+              <li><a class="btn btn-outline-secondary mb-3" href="#">Facebook</a></li>
+              <li><a class="btn btn-outline-secondary mb-3" href="#">Instagram</a></li>
+              <li><a class="btn btn-outline-secondary" href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="container">
+
+  <div class="text-center my-5">
+    <span class="h6 text-uppercase d-block mt-3">AINDA ESTÁ COM DÚVIDAS?</span>
+    <h2 class="display-4 text-primary mb-5">Perguntas Frequentes</h2>
+  </div>
+  <div class="row justify-content-center text-center mb-5">
+    <div class="col-6">
+      <p class="d-inline-flex gap-1">
+        <a class="text-primary h5" data-bs-toggle="collapse" href="#primeiraPergunta" role="button" aria-expanded="false" aria-controls="collapseExample"><u>É possível cancelar a viagem?</u></a>
+      </p>
+      <div class="collapse" id="primeiraPergunta">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+      <br>
+      <p class="d-inline-flex gap-1">
+        <a class="text-primary h5" data-bs-toggle="collapse" href="#segundaPergunta" role="button" aria-expanded="false" aria-controls="collapseExample"><u>Quanto tempo antes posso reagendar?</u></a>
+      </p>
+      <div class="collapse" id="segundaPergunta">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+      <br>
+      <p class="d-inline-flex gap-1">
+        <a class="text-primary h5" data-bs-toggle="collapse" href="#terceiraPergunta" role="button" aria-expanded="false" aria-controls="collapseExample"><u>Como alugar carros lá?</u></a>
+      </p>
+      <div class="collapse" id="terceiraPergunta">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+      <br>
+      <p class="d-inline-flex gap-1">
+        <a class="text-primary h5" data-bs-toggle="collapse" href="#quartaPergunta" role="button" aria-expanded="false" aria-controls="collapseExample"><u>Quais documentos são necessários?</u></a>
+      </p>
+      <div class="collapse" id="quartaPergunta">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<footer class="bg-dark text-white text-center">
+  <div class="container py-4">
+    <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul id="links" class="list-unstyled">
+            <li><a href="./html/planos.html">Planos</a></li>
+            <li><a href="./html/contato.html">Contato</a></li>
+            <li><a href="./html/inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Locais</h4>
+          <ul id="links" class="list-unstyled">
+            <li><a href="./html/california.html">California</a></li>
+            <li><a href="./html/paris.html">Paris</a></li>
+            <li><a href="./html/dublin.html">Dublin</a></li>
+          </ul>
+        </div>
+
+      <div class="col-md-4 col-6">
+        <h4 class="h6">DADOS DE CONTATO</h4>
+        <ul class="list-unstyled text-secondary">
+          <li>caravan@caravan.com.br</li>
+          <li>15 99999-9999</li>
+          <li>De segunda - sexta 08:00-18:00</li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-6">
+        <h4 class="h6">REDES SOCIAIS</h4>
+        <ul class="list-unstyled">
+          <li><a class="btn btn-outline-secondary mb-3" href="#">Facebook</a></li>
+          <li><a class="btn btn-outline-secondary mb-3" href="#">Instagram</a></li>
+          <li><a class="btn btn-outline-secondary" href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../bootstrap.bundle.js"></script>
+</body>
+</html>
