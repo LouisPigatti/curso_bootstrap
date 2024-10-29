@@ -1,0 +1,58 @@
+body {
+    padding-top: 75px;
+}
+
+.icone {
+    height: 80px;
+}
+.lista-planos li {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+#quote {
+    background: url('../img/bg-quote.jpg') center center;
+    background-size: cover;
+}
+#links a {
+    text-decoration: none;
+}
+#ajuste {
+    border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    #quote .display-4 {
+        font-size: 2rem;
+    }
+    #responsivo .display-4 {
+        font-size: 2.3rem;
+    }
+    .icone {
+        height: 70px;
+    }
+}
+@media (max-width: 576px) {
+    #quote {
+        display: none;
+    }
+    #responsivo .display-4 {
+        font-size: 1.7rem;
+    }
+    .icone {
+        height: 60px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+    .fixed-top {
+        position: relative;
+    }
+}
